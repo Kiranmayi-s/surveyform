@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        span{
+            color: red;
+        }
+        label{
+            font-size: small;
+        }
+        .tabelcol{
+            padding-left: 30px;
+        }
+        .tabelcol2{
+            padding-left: 48px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <form method="POST" onsubmit="output ()">
+
+    <div style="padding-left: 350px; padding-right: 350px;padding-bottom: 730px; background-color: rgb(37, 35, 35); position: relative; ">
+        <div style="background-color:whitesmoke; padding-top: 10px;padding-bottom:14px;  padding-left:20px;padding-right:14px; position: absolute;top:15px">
+           <b> Name</b><span>*</span><br>
+            <input type="text" id="1name" name="fname"; required ><input style= "position:absolute;right: 370px;"  type="text" id="1name" name="fname"; required >
+            <br><label>First</label><label style= "position:absolute;right: 510px;" >Last</label><br><br>
+            <b>Email</b><span>*</span><br>
+            <input  style="padding-right: 190px" type="text" id="1name" name="fname"; required ><br><br>
+            <b>Your Experience</b><span>*</span><br><i class= "fa fa-star-o fa-2x" ></i>
+            <i class= "fa fa-star-o fa-2x" ></i>
+            <i class="fa fa-star-o fa-2x"></i>
+            <i class="fa fa-star-o fa-2x"></i>
+            <i class="fa fa-star-o fa-2x"></i><br>
+            <label>Overall, how would yourate your experience with us?</label><br><br>
+            <b>How satisfied are you with<span>*</span></b><br>
+            <table>
+            <tr>
+            <td></td><td style="padding-left: 100px;">Very unsatisfied</td>
+            <td class="tabelcol">Unsatisfied</td>
+            <td class="tabelcol">Neutral</td>
+            <td class="tabelcol">Satisfied</td>
+            <td class="tabelcol"> Very Satisfied</td>
+            </tr>
+            <tr style="background-color: rgb(210, 216, 216);">
+                <td>Purchase</td>
+                <td style="padding-left: 150px;"><input type="radio"  name="Purchase" required></td>
+                <td style="padding-left: 60px;"><input type="radio" name="Purchase" required></td>
+                <td style="padding-left: 40px;"><input type="radio" name="Purchase" required></td>
+                <td style="padding-left: 46px;"><input type="radio"  name="Purchase" required></td>
+                <td style="padding-left: 59px;"><input type="radio"  name="Purchase" required></td>
+            </tr>
+            <tr>
+                <td>Serice</td>
+                <td style="padding-left: 150px;"><input type="radio" name="Serice" required></td>
+                <td style="padding-left: 60px;"><input type="radio" name="Serice" required></td>
+                <td style="padding-left: 40px;"><input type="radio"  name="Serice" required></td>
+                <td style="padding-left: 46px;"><input type="radio"  name="Serice" required></td>
+                <td style="padding-left: 59px;"><input type="radio"  name="Serice" required></td>
+             </tr>
+            <tr style="background-color: rgb(223, 226, 226);">
+                <td>Company Overall</td>
+                <td style="padding-left: 150px;"><input type="radio"  name="Company" required></td>
+                <td style="padding-left: 60px;"><input type="radio"  name="Company" required></td>
+                <td style="padding-left: 40px;"><input type="radio" name="Company" required></td>
+                <td style="padding-left: 46px;"><input type="radio" name="Company" required></td>
+                <td style="padding-left: 59px;"><input type="radio" name="Company" required></td>
+            </tr>
+        </table><br>
+
+            <b>How likely are you to<span>*</span></b><br>
+            <table>
+            <tr>
+            <td></td><td style="padding-left: 100px;">Very Unlikey</td>
+            <td class="tabelcol2">Unlikey</td>
+            <td class="tabelcol2">Neutral</td>
+            <td class="tabelcol2">Likey</td>
+            <td class="tabelcol2"> Very Likey</td>
+            </tr>
+            <tr style="background-color: rgb(210, 216, 216);"> 
+                <td>Buy from us again</td>
+                <td style="padding-left: 140px;"><input type="radio"  name="buy" required></td>
+                <td style="padding-left: 60px;"><input type="radio"  name="buy" required></td>
+                <td style="padding-left: 55px;"><input type="radio"  name="buy" required></td>
+                <td style="padding-left: 46px;"><input type="radio"  name="buy" required></td>
+                <td style="padding-left: 59px;"><input type="radio"  name="buy" required></td>
+            </tr>
+            <tr>
+                <td>Recommend our<br>products to others</td>
+                <td style="padding-left: 140px;"><input type="radio"  name="buy1" required></td>
+                <td style="padding-left: 60px;"><input type="radio"  name="buy1" required></td>
+                <td style="padding-left: 55px;"><input type="radio" name="buy1" required></td>
+                <td style="padding-left: 46px;"><input type="radio" name="buy1" required></td>
+                <td style="padding-left: 59px;"><input type="radio"  name="buy1" required></td>
+             </tr>
+            <tr style="background-color: rgb(210, 216, 216);">
+                <td>Recommend our<br>company to others</td>
+                <td style="padding-left: 140px;"><input type="radio"  name="buy2" required></td>
+                <td style="padding-left: 60px;"><input type="radio"  name="buy2" required></td>
+                <td style="padding-left: 55px;"><input type="radio" name="buy2" required></td>
+                <td style="padding-left: 46px;"><input type="radio" name="buy2" required></td>
+                <td style="padding-left: 59px;"><input type="radio"  name="buy2" required></td>
+            </tr>
+            </table><br>
+            <b>Add additional comments or suggestions</b><br>
+            <input style=  "padding-right: 570px; padding-bottom: 80px;" type="text" name="comments"><br><br>
+            <label></label><input type="Submit" name="submit">
+        </div>
+        </div> 
+    </form>
+    <script> function output() {alert ("Thank you for submitting")} </script>   
+    
+</body>
+</html>
